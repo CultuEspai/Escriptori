@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="espaiCulturalModelStoreContainer" CdmEntityContainer="espaiCulturalEntities1">
+    <EntitySetMapping Name="CaracteristiquesSales">
+      <EntityTypeMapping TypeName="espaiCulturalModel.CaracteristiquesSales">
+        <MappingFragment StoreEntitySet="CaracteristiquesSales">
+          <ScalarProperty Name="CaracteristicaID" ColumnName="CaracteristicaID" />
+          <ScalarProperty Name="SalaID" ColumnName="SalaID" />
+          <ScalarProperty Name="CaracteristicaNom" ColumnName="CaracteristicaNom" />
+          <ScalarProperty Name="CaracteristicaValor" ColumnName="CaracteristicaValor" />
+          <ScalarProperty Name="DataModificacio" ColumnName="DataModificacio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Entrades">
+      <EntityTypeMapping TypeName="espaiCulturalModel.Entrades">
+        <MappingFragment StoreEntitySet="Entrades">
+          <ScalarProperty Name="EntradaID" ColumnName="EntradaID" />
+          <ScalarProperty Name="UsuariID" ColumnName="UsuariID" />
+          <ScalarProperty Name="EsdevenimentID" ColumnName="EsdevenimentID" />
+          <ScalarProperty Name="Quantitat" ColumnName="Quantitat" />
+          <ScalarProperty Name="NumeroButaca" ColumnName="NumeroButaca" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Esdeveniments">
+      <EntityTypeMapping TypeName="espaiCulturalModel.Esdeveniments">
+        <MappingFragment StoreEntitySet="Esdeveniments">
+          <ScalarProperty Name="EntradesDisp" ColumnName="EntradesDisp" />
+          <ScalarProperty Name="EsdevenimentID" ColumnName="EsdevenimentID" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Descripcio" ColumnName="Descripcio" />
+          <ScalarProperty Name="SalaID" ColumnName="SalaID" />
+          <ScalarProperty Name="DataInici" ColumnName="DataInici" />
+          <ScalarProperty Name="DataFi" ColumnName="DataFi" />
+          <ScalarProperty Name="Aforament" ColumnName="Aforament" />
+          <ScalarProperty Name="OrganitzadorID" ColumnName="OrganitzadorID" />
+          <ScalarProperty Name="Estat" ColumnName="Estat" />
+          <ScalarProperty Name="DePagament" ColumnName="DePagament" />
+          <ScalarProperty Name="Preu" ColumnName="Preu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sales">
+      <EntityTypeMapping TypeName="espaiCulturalModel.Sales">
+        <MappingFragment StoreEntitySet="Sales">
+          <ScalarProperty Name="ButacaMax" ColumnName="ButacaMax" />
+          <ScalarProperty Name="SalaID" ColumnName="SalaID" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Aforament" ColumnName="Aforament" />
+          <ScalarProperty Name="Descripcio" ColumnName="Descripcio" />
+          <ScalarProperty Name="CadiresFixes" ColumnName="CadiresFixes" />
+          <ScalarProperty Name="MetresQuadrats" ColumnName="MetresQuadrats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuaris">
+      <EntityTypeMapping TypeName="espaiCulturalModel.Usuaris">
+        <MappingFragment StoreEntitySet="Usuaris">
+          <ScalarProperty Name="ContrasenyaHash" ColumnName="ContrasenyaHash" />
+          <ScalarProperty Name="UsuariID" ColumnName="UsuariID" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Correu" ColumnName="Correu" />
+          <ScalarProperty Name="Contrasenya" ColumnName="Contrasenya" />
+          <ScalarProperty Name="TipusUsuari" ColumnName="TipusUsuari" />
+          <ScalarProperty Name="Actiu" ColumnName="Actiu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Xats">
+      <EntityTypeMapping TypeName="espaiCulturalModel.Xats">
+        <MappingFragment StoreEntitySet="Xats">
+          <ScalarProperty Name="XatID" ColumnName="XatID" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="IDEsdeveniment" ColumnName="IDEsdeveniment" />
+          <ScalarProperty Name="Enviat" ColumnName="Enviat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
